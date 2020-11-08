@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Expense Tracker</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h1 class="text-center mt-4 mb-5 text-info">Expense Tracker</h1>
+      </div>
+      <div class="input-group row">
+        <span class="mr-3">Name: </span
+        ><input type="text" class="col-11 mb-4 mr-3" id="name" />
+        <span class="mr-3 ml-3">Date:</span
+        ><input type="date" id="date" class="col-5" />
+        <span class="mr-2 ml-3">Amount:</span
+        ><input type="text" id="amount" class="col-5" />
+      </div>
+      <div class="button d-flex justify-content-center">
+        <button class="btn btn-outline-success mt-5">add expense</button>
+      </div>
+      <div class="section">
+        <table id="table" class="mt-4">
+          <tr>
+            <th>Name:</th>
+            <th>Date:</th>
+            <th>Amount:</th>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
